@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import Avatar from '../shared/Avatar';
-import { IProduct } from '../../interfaces/product.interface';
+import Avatar from '../../../shared/components/Avatar';
+import { IProduct } from '../interfaces/product.interface';
 import Image from 'next/image';
 import Details from './ProductDetails';
-import CircleButton from '../buttons/CircleButtons';
+import CircleButton from '../../../shared/components/buttons/CircleButtons';
 import ProductDescription from './ProductDescription';
-import { saveProductInWishlist } from '../../services/wishlist.service';
-import { removeProductFromWishlist } from './../../services/wishlist.service';
+import { saveProductInWishlist } from '../../wishlist/services/wishlist.service';
+import { removeProductFromWishlist } from '../../wishlist/services/wishlist.service';
 
 const ProductCard = ({ product }: { product: IProduct }) => {
     const [isInWishlist, setIsInWishlist] = useState<boolean>((product.wishlist?.length) ? true : false);

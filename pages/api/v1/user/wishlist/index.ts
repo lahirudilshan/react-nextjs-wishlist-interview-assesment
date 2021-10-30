@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { IProduct } from '../../../../../interfaces/product.interface';
+import { IProduct } from '../../../../../modules/product/interfaces/product.interface';
 import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();

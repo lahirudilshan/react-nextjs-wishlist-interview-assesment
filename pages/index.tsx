@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
 import { useEffect, useState } from 'react';
-import { IProduct } from '../interfaces/product.interface';
-import { getProducts } from '../services/product.service';
-import ProductCard from '../components/product/ProductCard';
+import { IProduct } from '../modules/product/interfaces/product.interface';
+import { getProducts } from '../modules/product/services/product.service';
+import ProductCard from '../modules/product/components/ProductCard';
 
 const Home: NextPage = () => {
   // states

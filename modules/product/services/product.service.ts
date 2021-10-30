@@ -1,4 +1,4 @@
-import { fetch } from './shared/httpService';
+import { fetch } from '../../../shared/services/httpService';
 
 export const getProducts = () => {
     return fetch({

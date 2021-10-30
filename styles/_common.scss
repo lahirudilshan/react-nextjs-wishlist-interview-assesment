@@ -1,0 +1,13 @@
+nav {
+  @include xs {
+    bottom: 0;
+  }
+
+  @include lg {
+    top: 0;
+  }
+}
+
+.opacity{
+  background-color: rgba(236, 240, 241, 0.5);
+}

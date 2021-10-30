@@ -1,5 +1,6 @@
-import Navbar from './../shared/Navbar';
-import Footer from './../shared/Footer';
+import Footer from "../Footer";
+import Navbar from "../Navbar";
+
 
 const AppLayout = ({ children }: { children: any }) => {
     return (

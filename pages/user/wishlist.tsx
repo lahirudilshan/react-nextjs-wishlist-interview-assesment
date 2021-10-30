@@ -1,10 +1,10 @@
 import type { NextPage } from 'next';
 import { useEffect, useState } from 'react';
-import { getWishlist, removeProductFromWishlist } from './../../services/wishlist.service';
+import { getWishlist, removeProductFromWishlist } from '../../modules/wishlist/services/wishlist.service';
 import Link from 'next/link';
-import { IWishlist } from '../../interfaces/wishlist.interface';
-import WishlistProduct from './../../components/wishlist/WishlistProduct';
-import NoDataMessage from '../../components/shared/NoDataMessage';
+import { IWishlist } from '../../modules/wishlist/interfaces/wishlist.interface';
+import WishlistProduct from '../../modules/wishlist/components/WishlistProduct';
+import NoDataMessage from './../../shared/components/NoDataMessage';
 
 const Wishlist: NextPage = () => {
   // states

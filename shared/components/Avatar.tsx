@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import { IProduct } from '../../interfaces/product.interface';
+import { IProduct } from '../../modules/product/interfaces/product.interface';
 
 const Avatar = ({ product }: { product: IProduct }) => {
     return (

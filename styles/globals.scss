@@ -2,18 +2,5 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './shared/media-queries.scss';
-
-nav {
-  @include xs {
-    bottom: 0;
-  }
-
-  @include lg {
-    top: 0;
-  }
-}
-
-.opacity{
-  background-color: rgba(236, 240, 241, 0.5);
-}
+@import './media-queries.scss';
+@import './common';

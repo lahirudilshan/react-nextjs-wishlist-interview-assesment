@@ -1,5 +1,5 @@
-import { IProduct } from '../interfaces/product.interface';
-import { fetch } from './shared/httpService';
+import { IProduct } from '../../product/interfaces/product.interface';
+import { fetch } from '../../../shared/services/httpService';
 
 export const saveProductInWishlist = (product: IProduct) => {
     if (!product) throw new Error('Product params should be passed to the "saveProductInWishlist" function');
