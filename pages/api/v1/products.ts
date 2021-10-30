@@ -1,24 +1,44 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
-import { IProduct } from '../../../interfaces/product.interface';
+import type { NextApiRequest, NextApiResponse } from 'next';
+import { PrismaClient, products } from '@prisma/client';
 
+const prisma = new PrismaClient();
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<IProduct[]>
+  res: NextApiResponse<products[]>
 ) {
-  const products: IProduct[] = [];
-
-  for (let i = 1; i < 23; i++) {
-    products.push({
-      id: i,
-      name: `Product ${1}`,
-      href: '#',
-      price: Math.floor(Math.random() * 1000),
-      image: `/static/images/products/product-${i}.jpg`,
-      postBy: `/static/images/avatars/user-1.jpg`,
-      imageAlt: `Product ${1} image`,
-    });
+  switch (req.method) {
+    case 'GET': {
+      return handleGetRequest(res);
+    }
   }
+}
 
-  res.status(200).json(products);
+/**
+ * handle get request
+ * @param res NextApiResponse<any>
+ */
+const handleGetRequest = (res: NextApiResponse<products[]>) => {
+  return getProducts()
+    .then((products) => {
+      return res.status(200).json(products);
+    })
+    .catch((e) => {
+      throw e;
+    })
+    .finally(async () => {
+      await prisma.$disconnect()
+    });
+}
+
+/**
+ * get products
+ * @return Promise<IProduct[]>
+ */
+async function getProducts() {
+  return await prisma.products.findMany({
+    include: {
+      wishlist: true
+    }
+  });
 }

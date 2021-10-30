@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model wishlist {
+  id         Int       @id @default(autoincrement()) @db.UnsignedInt
+  product_id Int?      @db.UnsignedInt
+  created_at DateTime? @db.Timestamp(0)
+  products   products? @relation(fields: [product_id], references: [id], onDelete: Cascade, map: "fk_product")
+
+  @@index([product_id], map: "fk_product")
+}
+
+model products {
+  id         Int        @id @default(autoincrement()) @db.UnsignedInt
+  name       String?    @db.VarChar(255)
+  price      Decimal?   @db.Decimal(10, 2)
+  image      String?    @db.VarChar(255)
+  postBy     String?    @db.VarChar(255)
+  created_at DateTime?  @db.Timestamp(0)
+  wishlist   wishlist[]
+}

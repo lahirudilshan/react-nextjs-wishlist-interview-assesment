@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Tags = () => {
+const ProductTags = () => {
     return (
         <div className="text-xs font-semibold">
             <span className="text-blue-500 mr-2">#apple</span>
@@ -11,4 +11,4 @@ const Tags = () => {
     )
 }
 
-export default Tags
+export default ProductTags
