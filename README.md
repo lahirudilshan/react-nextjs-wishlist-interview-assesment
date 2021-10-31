@@ -53,7 +53,6 @@ after run above command visit to ```http://localhost:3000``` in your browser to 
 
 <br>
 <br>
----
 
 ## Developer
 
