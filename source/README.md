@@ -32,18 +32,26 @@ This application used new technologies for building perfect applications which i
 - Must have installed [Node.js](https://nodejs.org/) v14+ to run the application.
 - Must have installed MySql
 
-Create a database for holding system table called ```wishlist```
-and change MySql Connection in .env files then run below command for migrating application tables
-
-```cmd
-yarn prisma migrate
-```
 for install application's dependencies
 run
 
 ```cmd
 yarn install
 ```
+
+Create a database for holding system table called ```wishlist```
+and change MySql Connection in .env files then run below command for migrating application tables
+
+```cmd
+yarn prisma migrate
+```
+
+Run below command for seeder default data to the tables
+
+```cmd
+yarn prisma db seed
+```
+
 after installed required dependencies serve the application by running
 ```cmd
 yarn dev
@@ -53,10 +61,40 @@ after run above command visit to ```http://localhost:3000``` in your browser to 
 
 <br>
 <br>
-----
-### Developer
-### [Lahiru Dilshan (Senior Software Engineer - Fullstack)](https://www.linkedin.com/in/lahiru-dilshan-408ab3108/)
-----
+
+## Application Screenshots
+### Products - Landing Page
+
+![N|Solid](https://github.com/lahirudilshan/react-nextjs-wishlist-interview-assesment/blob/dev/materials/application-screenshots/product-landing-page.png)
+
+<br>
+<br>
+
+### Products - Landing Page With Hearts
+
+![N|Solid](https://github.com/lahirudilshan/react-nextjs-wishlist-interview-assesment/blob/dev/materials/application-screenshots/product-landing-page-with-heart.png)
+
+<br>
+<br>
+
+### Wishlist - No Product in Wishlist
+
+![N|Solid](https://github.com/lahirudilshan/react-nextjs-wishlist-interview-assesment/blob/dev/materials/application-screenshots/no-products-in-wishlist.png)
+
+<br>
+<br>
+
+### Wishlist - with favorite Products 
+
+![N|Solid](https://github.com/lahirudilshan/react-nextjs-wishlist-interview-assesment/blob/dev/materials/application-screenshots/wishlist.png)
+
+<br>
+<br>
+## Developer
+
+[Lahiru Dilshan (Senior Software Engineer - Fullstack)](https://www.linkedin.com/in/lahiru-dilshan-408ab3108/)
+
+---
 <br>
 ## License
 
