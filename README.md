@@ -62,7 +62,7 @@ after run above command visit to ```http://localhost:3000``` in your browser to 
 <br>
 <br>
 
-## Application Screenshots
+## Application Screenshots - Desktop View
 ### Products - Landing Page
 
 ![N|Solid](https://github.com/lahirudilshan/react-nextjs-wishlist-interview-assesment/blob/dev/materials/application-screenshots/product-landing-page.png)
@@ -87,6 +87,27 @@ after run above command visit to ```http://localhost:3000``` in your browser to 
 ### Wishlist - with favorite Products 
 
 ![N|Solid](https://github.com/lahirudilshan/react-nextjs-wishlist-interview-assesment/blob/dev/materials/application-screenshots/wishlist.png)
+
+## Application Screenshots - Mobile View
+
+### Products - Landing Page
+
+![N|Solid](https://github.com/lahirudilshan/react-nextjs-wishlist-interview-assesment/blob/master/materials/application-screenshots/mobile-view/product-landing-page-mobile.png)
+
+<br>
+<br>
+
+### Wishlist - with favorite Products 
+
+![N|Solid](https://github.com/lahirudilshan/react-nextjs-wishlist-interview-assesment/blob/master/materials/application-screenshots/mobile-view/wishlist-with-product-mobile.png)
+
+
+<br>
+<br>
+
+### Wishlist - with no Products 
+
+![N|Solid](https://github.com/lahirudilshan/react-nextjs-wishlist-interview-assesment/blob/master/materials/application-screenshots/mobile-view/wishlist-with-no-product-mobile.png)
 
 <br>
 <br>
