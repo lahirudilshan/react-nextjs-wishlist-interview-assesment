@@ -90,12 +90,14 @@ after run above command visit to ```http://localhost:3000``` in your browser to 
 
 <br>
 <br>
+
 ## Developer
 
 [Lahiru Dilshan (Senior Software Engineer - Fullstack)](https://www.linkedin.com/in/lahiru-dilshan-408ab3108/)
 
 ---
 <br>
+
 ## License
 
 MIT
