@@ -23,6 +23,9 @@ function* fetchProductSaga() {
     }
 }
 
+/**
+ * catch the action and run the function
+ */
 function* productSaga() {
     yield all([
         takeLatest(ProductConstant.FETCH_PRODUCT_REQUEST, fetchProductSaga)

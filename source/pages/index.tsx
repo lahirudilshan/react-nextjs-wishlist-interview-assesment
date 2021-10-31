@@ -26,7 +26,7 @@ const Home: NextPage = () => {
       <div className="bg-white">
         <div className="max-w-2xl mx-auto lg:py-16 sm:py-4 px-4 sm:px-6 lg:max-w-7xl lg:px-8 lg:mt-10">
           <h2 className="my-4 font-semibold text-lg text-gray-600">Products</h2>
-          {/* display skeleton when product is loading */}
+          {/* display skeleton when the products loading */}
           {pending && (<ProductSkeleton />)}
 
           {pending === false && (

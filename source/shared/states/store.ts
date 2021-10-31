@@ -12,7 +12,7 @@ const store = createStore(
     composeWithDevTools(applyMiddleware(sagaMiddleware))
 )
 
-// Run redux-saga
+// run middleware
 sagaMiddleware.run(rootSaga)
 
 export default store

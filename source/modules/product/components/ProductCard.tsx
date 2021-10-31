@@ -25,24 +25,9 @@ const ProductCard = ({ product }: { product: IProduct }) => {
         if (isInWishlist) {
             dispatch(removeWishlistProductRequest(product));
             setIsInWishlist(false);
-
-            // removeProductFromWishlist({ id: product.id })
-            //     .then((response) => {
-            //         if (response.status === 200) setIsInWishlist(false);
-            //     })
-            //     .catch((error) => {
-            //         console.log(error);
-            //     });
         } else {
             dispatch(saveWishlistProductRequest(product));
             setIsInWishlist(true);
-            // saveProductInWishlist(product)
-            //     .then((response) => {
-            //         if (response.status === 200) setIsInWishlist(true);
-            //     })
-            //     .catch((error) => {
-            //         console.log(error);
-            //     });
         }
     }
 

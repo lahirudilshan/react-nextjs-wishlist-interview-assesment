@@ -8,6 +8,7 @@ export interface IWishlistRemoveState {
     error: string | null;
 }
 
+// payload interfaces
 export interface IRemoveWishlistSuccessPayload {
     removeProduct: IProduct | null
 }
@@ -16,10 +17,7 @@ export interface IRemoveWishlistFailurePayload {
     error: string;
 }
 
-// export interface IRemoveWishlistRequestPayload {
-//     wishlistProduct: IWishlist;
-// }
-
+// actions interfaces
 export interface IRemoveWishlistRequest {
     type: typeof WishlistRemoveConstant.REMOVE_WISHLIST_REQUEST;
     payload: IProduct
@@ -35,4 +33,5 @@ export type IRemoveWishlistFailure = {
     payload: IRemoveWishlistFailurePayload;
 };
 
+// available actions
 export type TWishlistRemoveAction = IRemoveWishlistRequest | IRemoveWishlistSuccess | IRemoveWishlistFailure;

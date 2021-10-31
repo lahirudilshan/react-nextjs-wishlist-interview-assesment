@@ -1,7 +1,7 @@
 import Axios from "axios";
 import { IFetchOptions } from '../interfaces/http.interface';
 
-// default settings
+// default axios settings
 Axios.defaults.headers.get['Content-Type'] = 'application/json';
 
 /**

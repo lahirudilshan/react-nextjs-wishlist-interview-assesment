@@ -7,6 +7,7 @@ export interface IProductState {
     error: string | null;
 }
 
+// payload interfaces
 export interface IFetchProductSuccessPayload {
     products: IProduct[]
 }
@@ -15,18 +16,20 @@ export interface IFetchProductFailurePayload {
     error: string;
 }
 
+// apis interfaces
 export interface IFetchProductRequest {
     type: typeof ProductConstant.FETCH_PRODUCT_REQUEST;
 }
 
-export type FetchProductSuccess = {
+export type TFetchProductSuccess = {
     type: typeof ProductConstant.FETCH_PRODUCT_SUCCESS;
     payload: IFetchProductSuccessPayload;
 };
 
-export type FetchProductFailure = {
+export type TFetchProductFailure = {
     type: typeof ProductConstant.FETCH_PRODUCT_FAILURE;
     payload: IFetchProductFailurePayload;
 };
 
-export type TProductAction = IFetchProductRequest | FetchProductSuccess | FetchProductFailure;
+// available actions
+export type TProductAction = IFetchProductRequest | TFetchProductSuccess | TFetchProductFailure;

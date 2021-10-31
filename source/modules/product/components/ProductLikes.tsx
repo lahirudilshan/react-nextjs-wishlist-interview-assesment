@@ -1,5 +1,5 @@
-import React from 'react'
-import { IoHeart } from 'react-icons/io5'
+import React from 'react';
+import { IoHeart } from 'react-icons/io5';
 import { IProduct } from './../interfaces/product.interface';
 
 const ProductLikes = ({ product }: { product: IProduct }) => {

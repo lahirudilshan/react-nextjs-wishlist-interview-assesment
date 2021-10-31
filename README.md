@@ -25,7 +25,7 @@ This application used new technologies for building perfect applications which i
 - ```NextJS``` is Most popular and powerful Single Page Application (SPA) framework based on React
 - ```Tailwind CSS``` is very light-weight utility first CSS Framework
 - ```Redux``` is Most Popular State management plugin
-- ```Prisma``` is TypeScript ORM for Database management it has powerful features like Migrations, Seeder and ORM 
+- ```Prisma``` is TypeScript ORM for Database management and it has powerful features like Migrations, Seeder and ORM 
 
 ## Installation
 
@@ -38,7 +38,7 @@ and change MySql Connection in .env files then run below command for migrating a
 ```cmd
 yarn prisma migrate
 ```
-for application's dependencies installations
+for install application's dependencies
 run
 
 ```cmd
@@ -48,7 +48,9 @@ after installed required dependencies serve the application by running
 ```cmd
 yarn dev
 ```
+
 after run above command visit to ```http://localhost:3000``` in your browser to see the result.
+
 <br>
 <br>
 ----

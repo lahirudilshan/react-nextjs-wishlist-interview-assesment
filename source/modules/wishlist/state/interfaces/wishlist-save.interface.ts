@@ -8,6 +8,7 @@ export interface IWishlistSaveState {
     error: string | null;
 }
 
+// payload interfaces
 export interface ISaveWishlistSuccessPayload {
     id: number;
     product_id: number;
@@ -19,10 +20,7 @@ export interface ISaveWishlistFailurePayload {
     error: string;
 }
 
-// export interface ISaveWishlistRequestPayload {
-//     wishlistProduct: IWishlist;
-// }
-
+// actions interfaces
 export interface ISaveWishlistRequest {
     type: typeof WishlistSaveConstant.SAVE_WISHLIST_REQUEST;
     payload: IProduct
@@ -38,4 +36,5 @@ export type ISaveWishlistFailure = {
     payload: ISaveWishlistFailurePayload;
 };
 
+// available actions
 export type TWishlistSaveAction = ISaveWishlistRequest | ISaveWishlistSuccess | ISaveWishlistFailure;

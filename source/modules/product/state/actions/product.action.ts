@@ -1,5 +1,5 @@
 import { ProductConstant } from '../constants/product.constant';
-import { IFetchProductRequest, TFetchProductSuccess, TFetchProductFailure, IFetchProductSuccessPayload, IFetchProductFailurePayload } from '../interfaces/product.interface';
+import { IFetchProductRequest, IFetchProductSuccessPayload, IFetchProductFailurePayload, TFetchProductFailure, TFetchProductSuccess } from '../interfaces/product.interface';
 
 export const fetchProductRequest = (): IFetchProductRequest => ({
     type: ProductConstant.FETCH_PRODUCT_REQUEST

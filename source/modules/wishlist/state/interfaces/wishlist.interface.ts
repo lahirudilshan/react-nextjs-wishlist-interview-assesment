@@ -9,6 +9,7 @@ export interface IWishlistState {
     error: string | null;
 }
 
+// payload interfaces
 export interface IFetchWishlistSuccessPayload {
     wishlist: IWishlist[]
 }
@@ -17,18 +18,20 @@ export interface IFetchWishlistFailurePayload {
     error: string;
 }
 
+// actions interdaces
 export interface IFetchWishlistRequest {
     type: typeof WishlistConstant.FETCH_WISHLIST_REQUEST;
 }
 
-export type FetchWishlistSuccess = {
+export type TFetchWishlistSuccess = {
     type: typeof WishlistConstant.FETCH_WISHLIST_SUCCESS;
     payload: IFetchWishlistSuccessPayload;
 };
 
-export type FetchWishlistFailure = {
+export type TFetchWishlistFailure = {
     type: typeof WishlistConstant.FETCH_WISHLIST_FAILURE;
     payload: IFetchWishlistFailurePayload;
 };
 
-export type TWishlistAction = IFetchWishlistRequest | FetchWishlistSuccess | FetchWishlistFailure | TWishlistRemoveAction | TWishlistSaveAction;
+// available actions
+export type TWishlistAction = IFetchWishlistRequest | TFetchWishlistSuccess | TFetchWishlistFailure | TWishlistRemoveAction | TWishlistSaveAction;

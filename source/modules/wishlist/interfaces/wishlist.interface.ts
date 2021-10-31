@@ -6,13 +6,13 @@ export interface IWishlist {
     created_at: Date;
     products: IProduct | null
 }
-
+// apis response interfaces
 export interface IWishlistSaveResponse {
     id: number;
     product_id: string;
     created_at: Date;
 }
-
+// apis response interfaces
 export interface IWishlistRemoveResponse {
     count: number;
 }

@@ -42,6 +42,7 @@ const Wishlist: NextPage = () => {
           <div className="grid grid-cols-1 gap-5 md:w-3/4 w-full mx-auto">
             {wishlist?.length ? <h2 className="my-4 font-semibold text-lg text-gray-600">My Favorite Products</h2> : ''}
 
+            {/* display skeleton when the wishlist products loading */}
             {pending && (
               <WishlistProductSkeleton />
             )}
