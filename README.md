@@ -20,7 +20,7 @@ This application used new technologies for building perfect applications which i
 | Prisma + MySql  | TypeORM with Database| https://www.prisma.io/ |
 | Axios  | Http client for call APIs| https://axios-http.com/docs/intro |
 
-### Brief Interdiction of used technology
+### Brief Introduction of used technology
 
 - ```NextJS``` is Most popular and powerful Single Page Application (SPA) framework based on React
 - ```Tailwind CSS``` is very light-weight utility first CSS Framework
